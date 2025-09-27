@@ -1,7 +1,3 @@
-
-username: xr-rfid
-password: tetechmmu
-
 Items needed for the demo:
 1. Wearable RFID reader
 2. Wiring harness with 5 cables with RFID tags on each end
@@ -16,7 +12,6 @@ Setting up Unity build environment on the laptop
 5. Open the project in Unity
 6. Open Project settings in the Edit Menu
 7. Go to Player Settings. Under the advanced settings, set the HTTP access to always allow unsecured access. This is needed to bypass the HTTPS requirement of Unity.
-
 
 Instructions for the demo:
 1. The DB box is to be placed on its longer side on the work table facing the user.

@@ -1,0 +1,4 @@
+
+For ssh into the Rpi Zero W
+username: xr-rfid
+password: tetechmmu
