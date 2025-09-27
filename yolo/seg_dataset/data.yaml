@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['black', 'blue', 'red', 'yellow']
+
+roboflow:
+  workspace: justlabels
+  project: new_annotate-bk50m
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/justlabels/new_annotate-bk50m/dataset/3

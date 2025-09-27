@@ -1,0 +1,55 @@
+
+username: xr-rfid
+password: tetechmmu
+
+Items needed for the demo:
+1. Wearable RFID reader
+2. Wiring harness with 5 cables with RFID tags on each end
+3. DB Box with sockets
+4. Laptop to create a hotspot
+
+Setting up Unity build environment on the laptop
+1. Download and install Unity Hub
+2. Install the latest version of the Unity Editor
+3. Install the Android SDK packages in order to build for the Meta Quest 3
+4. Download the project folder "xr-rfid"
+5. Open the project in Unity
+6. Open Project settings in the Edit Menu
+7. Go to Player Settings. Under the advanced settings, set the HTTP access to always allow unsecured access. This is needed to bypass the HTTPS requirement of Unity.
+
+
+Instructions for the demo:
+1. The DB box is to be placed on its longer side on the work table facing the user.
+
+2. On the laptop
+	a. Remove the micro SD card from the RFID reader, and insert into a micro SD card reader connected to the laptop.
+	b. Open the wpa_supplicant.conf file in the bootfs drive on the micro SD card.
+	c. Change the region to US instead of IN. This is needed for the WiFi connection to function.
+	d. Create hotspot on the laptop with ssid "xr-rfid", and password "123456789".
+	e. Edit hotspot settings to ensure that the hotspot is never disabled even when no devices are connected to it.
+
+3. On the wearable RFID device
+	a. Power on the RFID device
+	b. The green LED indicator on the RFID device will stop blinking and glow continuously. This means that the device has turn on.
+	c. The device should have now connected to the "xr-rfid" hotspot. Check on the hotspot settings on the laptop.
+	d. The RFID reader should show the hostname "raspberrypi.local" 
+
+
+4. On the Meta Quest 3 head set
+	a. Enable developer mode using the Horizon app (to be installed on the user phone)
+	b. Connect to the "xr-rfid" hotspot created on the laptop.
+	b. Wear the device and connect the Meta Quest 3 headset to the laptop using the USB Type-C cable provided with the Meta Quest 3.
+	c. Enable USB debugging on the Meta Quest 3 when prompted.
+	d. Open Build Profiles on the File menu on Unity.
+	e. Change the Build target to Android.
+	f. Click on Build and Run
+	g. The app should be built and deployed on the Meta Quest 3 headset.
+	h. Accept any prompts for enabling spatial access.
+	i. Once the app opens, take a wire in such a way that the RFID tag is close to the RFID reader (red PCB).
+	j. A bounding box should appear on the Meta Quest Passthrough screen prompting the user on where to insert the cable.
+	k. Continue inserting the cables one by one.
+	l. To exit the app, click on the Meta menu button on the controller, and chose to quit the app.
+	m. The app can be opened again from the shortcut menu, or from the "Unknown sources" tab in the applications window.
+	
+
+
