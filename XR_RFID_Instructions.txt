@@ -8,7 +8,7 @@ Setting up Unity build environment on the laptop
 1. Download and install Unity Hub
 2. Install the latest version of the Unity Editor
 3. Install the Android SDK packages in order to build for the Meta Quest 3
-4. Download the project folder "xr-rfid"
+4. Download the project folder "xr-rfid" under the unity folder in the git repo "https://github.com/sonmaxsanjuro/xr-rfid"
 5. Open the project in Unity
 6. Open Project settings in the Edit Menu
 7. Go to Player Settings. Under the advanced settings, set the HTTP access to always allow unsecured access. This is needed to bypass the HTTPS requirement of Unity.
